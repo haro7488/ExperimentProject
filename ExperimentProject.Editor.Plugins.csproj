@@ -1,0 +1,536 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F690DEC3-DC2C-F2EE-C7C3-5890995BA8D2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Assembly-CSharp-Editor-firstpass</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Unity Full v3.5</TargetFrameworkProfile>
+    <CompilerResponseFile></CompilerResponseFile>
+    <UnityProjectType>EditorPlugins:7</UnityProjectType>
+    <UnityBuildTarget>Android:13</UnityBuildTarget>
+    <UnityVersion>5.5.0f3</UnityVersion>
+    <RootNamespace></RootNamespace>
+    <LangVersion Condition=" '$(VisualStudioVersion)' != '10.0' ">4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Debug\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Debug\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_5_0;UNITY_5_5;UNITY_5;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;UNITY_ANDROID;ENABLE_SUBSTANCE;UNITY_ANDROID_API;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_VIDEO;ENABLE_VR;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;ENABLE_VSTU;ENABLE_ADMOB;APPADVISORY_ADS;EASY_MOBILE;EM_ADMOB</DefineConstants>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Release\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Release\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_5_0;UNITY_5_5;UNITY_5;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;UNITY_ANDROID;ENABLE_SUBSTANCE;UNITY_ANDROID_API;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_VIDEO;ENABLE_VR;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;ENABLE_VSTU;ENABLE_ADMOB;APPADVISORY_ADS;EASY_MOBILE;EM_ADMOB</DefineConstants>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="Boo.Lang" />
+    <Reference Include="UnityScript.Lang" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Advertisements">
+      <HintPath>Library\UnityAssemblies\UnityEditor.Advertisements.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>Library\UnityAssemblies\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.EditorTestsRunner">
+      <HintPath>Library\UnityAssemblies\UnityEditor.EditorTestsRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>Library\UnityAssemblies\UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Networking">
+      <HintPath>Library\UnityAssemblies\UnityEditor.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.PlaymodeTestsRunner">
+      <HintPath>Library\UnityAssemblies\UnityEditor.PlaymodeTestsRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PlaymodeTestsRunner">
+      <HintPath>Library\UnityAssemblies\UnityEngine.PlaymodeTestsRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.TreeEditor">
+      <HintPath>Library\UnityAssemblies\UnityEditor.TreeEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Analytics">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Analytics">
+      <HintPath>Library\UnityAssemblies\UnityEditor.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.HoloLens">
+      <HintPath>Library\UnityAssemblies\UnityEditor.HoloLens.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HoloLens">
+      <HintPath>Library\UnityAssemblies\UnityEngine.HoloLens.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.VR">
+      <HintPath>Library\UnityAssemblies\UnityEditor.VR.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VR">
+      <HintPath>Library\UnityAssemblies\UnityEngine.VR.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Graphs">
+      <HintPath>Library\UnityAssemblies\UnityEditor.Graphs.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Android.Extensions">
+      <HintPath>Library\UnityAssemblies\UnityEditor.Android.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.WebGL.Extensions">
+      <HintPath>Library\UnityAssemblies\UnityEditor.WebGL.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+      <HintPath>Library\UnityAssemblies\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
+      <HintPath>Library\UnityAssemblies\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.IOSResolver">
+      <HintPath>Assets\PlayServicesResolver\Editor\Google.IOSResolver.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.JarResolver">
+      <HintPath>Assets\PlayServicesResolver\Editor\Google.JarResolver.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.VersionHandler">
+      <HintPath>Assets\PlayServicesResolver\Editor\Google.VersionHandler.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="ExperimentProject.Plugins.csproj">
+      <Project>{1432C0F5-D785-A504-14DD-5EFE4F6F832D}</Project>
+      <Name>ExperimentProject.Plugins</Name>
+    </ProjectReference>
+    <ProjectReference Include="ExperimentProject.csproj">
+      <Project>{68DF3357-592A-E151-7290-92B0AA642C2F}</Project>
+      <Name>ExperimentProject</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\Attributes\DefaultValueEditorPrefAttribute.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\Attributes\SetColorAttribute.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\CategoryAttribute.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\Constants.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\CopyPathContext.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\EditorPrefTypes\EditorPrefArray.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\EditorPrefTypes\EditorPrefBoolean.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\EditorPrefTypes\EditorPrefByte.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\EditorPrefTypes\EditorPrefChar.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\EditorPrefTypes\EditorPrefClass.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\EditorPrefTypes\EditorPrefColor.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\EditorPrefTypes\EditorPrefDecimal.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\EditorPrefTypes\EditorPrefDouble.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\EditorPrefTypes\EditorPrefGUIStyle.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\EditorPrefTypes\EditorPrefGUIStyleState.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\EditorPrefTypes\EditorPrefInt16.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\EditorPrefTypes\EditorPrefInt32Enum.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\EditorPrefTypes\EditorPrefInt64.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\EditorPrefTypes\EditorPrefList.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\EditorPrefTypes\EditorPrefObject.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\EditorPrefTypes\EditorPrefQuaternion.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\EditorPrefTypes\EditorPrefRect.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\EditorPrefTypes\EditorPrefSByte.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\EditorPrefTypes\EditorPrefSingle.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\EditorPrefTypes\EditorPrefString.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\EditorPrefTypes\EditorPrefStruct.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\EditorPrefTypes\EditorPrefType.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\EditorPrefTypes\EditorPrefUInt16.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\EditorPrefTypes\EditorPrefUInt32.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\EditorPrefTypes\EditorPrefUInt64.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\EditorPrefTypes\EditorPrefVector2.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\EditorPrefTypes\EditorPrefVector3.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\EditorPrefTypes\EditorPrefVector4.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\ErrorPopup.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\ExternalNGMenuItems.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\FreeUtility\FreeConstants.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\FreeUtility\FreeOverlay.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\GUICallbackWindow.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\GUIListDrawer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\GUITimer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\GeneralStyles.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\GenericTypesSelectorWizard.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\HorizontalScrollbar.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\Localization\EmbedLocale.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\Localization\LC.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\Localization\Localization.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\NGCheckGUIDWindow.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\NGEditorApplication.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\NGEditorGUILayout.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\NGEditorPrefs.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\NGRealTimeEditorDebug.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\Preferences\ContactFormWizard.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\Preferences\Preferences.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\Preferences\TipsWindow.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\PromptWindow.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\PropertyAttributes\LocaleHeaderAttribute.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\PropertyDrawers\EnumMaskDrawer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\PropertyDrawers\FileDrawer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\PropertyDrawers\GHeaderDrawer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\PropertyDrawers\GRangeDrawer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\PropertyDrawers\GSpaceDrawer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\PropertyDrawers\GroupDrawer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\PropertyDrawers\GroupUnityEventDrawer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\PropertyDrawers\HideIfDrawer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\PropertyDrawers\LocaleHeaderDrawer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\PropertyDrawers\ShowIfDrawer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\Restorers\BgColorContentRestorer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\Restorers\ColorContentRestorer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\Restorers\HandlesColorRestorer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\Restorers\HandlesMatrix4x4Restorer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\Restorers\LabelWidthRestorer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\ScriptableObjectCreator.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\Settings\AbstractModuleSettings.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\Settings\AutoExposeSettings.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\Settings\IGUIInitializer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\Settings\MultiDataStorage.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\Settings\NGSettings.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\Settings\NGSettingsWindow.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\Settings\SectionDrawer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\SettingsExporter\Attributes\ExcludeFromExportAttribute.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\SettingsExporter\Attributes\ExportableAttribute.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\SettingsExporter\Attributes\HideFromExportAttribute.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\SettingsExporter\ExportSettingsWizard.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\SettingsExporter\ISettingsExportable.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\SettingsExporter\ImportSettingsWizard.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\SettingsExporter\SettingsExporter.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\UnityExtension.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\Utility.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Editor\VerticalScrollbar.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Network\Editor\AutoDetectUDPListener.cs" />
+    <Compile Include="Assets\Plugins\NGTools\Common\Network\Editor\MonitorClientPacketsWindow.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGAssetsFinder\Editor\AssetMatches.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGAssetsFinder\Editor\ContainerType.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGAssetsFinder\Editor\Exceptions\MaximumReplacementsReachedException.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGAssetsFinder\Editor\Match.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGAssetsFinder\Editor\NGAssetsFinderWindow.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGAssetsFinder\Editor\RendererExclusion.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGAssetsFinder\Editor\TransformExclusion.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGAssetsFinder\Editor\TypeMembersExclusion.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGComponentReplacer\Editor\NGComponentReplacerWindow.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGComponentsInspector\Editor\NGComponentsInspectorWindow.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\Attributes\RowDrawerLogHandlerAttribute.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\Attributes\VisibleModuleAttribute.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\Constants.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\EditorOpeners\EmacsOpener.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\EditorOpeners\IEditorOpener.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\EditorOpeners\MonoDevelopOpener.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\EditorOpeners\NotepadPlusPlusOpener.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\EditorOpeners\SublimeOpener.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\EditorOpeners\VimOpener.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\EditorOpeners\VisualStudioOpener.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\Editors\ConsoleSettingsEditor.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\Editors\ModuleWindow.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\Enums\ConsoleFlags.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\Enums\FilterResult.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\Enums\LogType.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\Enums\Mode.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\IRows.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\IStreams.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\InputCommands\InputCommand.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\InputCommands\InputsGroup.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\InputCommands\InputsManager.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\LogEntry.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\LogExporters\ExportRowsEditorWindow.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\LogExporters\ILogExporter.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\LogExporters\RawExporter.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\LogExporters\XMLExporter.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\LogFilters\ContentFilter.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\LogFilters\GroupFilters.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\LogFilters\HierarchyFilter.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\LogFilters\ILogFilter.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\LogFilters\MaskTypeFilter.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\LogFilters\NameHierarchyFilter.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\LogFilters\TagFilter.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\LogFilters\ToggleTagsFilter.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\Module.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\NGConsoleWindow.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\NGSettings.Console.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\Presets\FastestPreset.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\Presets\MinimalPreset.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\Presets\Preset.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\Presets\VerbosePreset.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\PropertyDrawers\EditorExtensionsDrawer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\Rows\DataRow.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\Rows\DefaultRow.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\Rows\Frame.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\Rows\ILogContentGetter.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\Rows\MultiContextsRow.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\Rows\MultiTagsRow.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\Rows\Row.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\RowsDrawer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\StackFrameFilters\IStackFrameFilter.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\StackFrameFilters\UselessFrameFilter.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\StreamLog.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\SyncLogs.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\Themes\DarkTheme.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\Themes\DefaultFontSizeTheme.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\Themes\FontSize12Theme.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\Themes\FontSize14Theme.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\Themes\FontSize16Theme.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\Themes\FontSize18Theme.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\Themes\FontSize22Theme.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\Themes\LightTheme.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\Themes\Theme.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\UnityLogEntries.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\UnityLogEntry.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\Utilities\CacheSystems\FastClassCache.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\Utilities\CacheSystems\FastFileCache.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\Utilities\CacheSystems\FastMethodCache.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\Utilities\FilesWatcher.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\Utilities\FrameBuilder.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\Utilities\LogConditionParser.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\Utilities\PerWindowVars.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\Utilities\RowUtility.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Editor\Utility.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Modules\Archive\Editor\ArchiveModule.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Modules\ColorMarkers\Editor\ColorBackground.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Modules\ColorMarkers\Editor\ColorBackgroundDrawer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Modules\ColorMarkers\Editor\ColorMarker.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Modules\ColorMarkers\Editor\ColorMarkersModule.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Modules\ColorMarkers\Editor\ColorMarkersWizard.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Modules\ColorMarkers\Editor\NGSettings.Console.ColorMarkersModule.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Modules\Debug\Editor\DebugModule.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Modules\Drop\Editor\DropModule.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Modules\Main\Editor\CompileRow.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Modules\Main\Editor\CompilerStream.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Modules\Main\Editor\ErrorCompileRow.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Modules\Main\Editor\MainModule.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Modules\Main\Editor\MainStream.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Modules\Main\Editor\NGSettings.Console.MainModule.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Modules\Recorder\Editor\RecorderModule.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Modules\Recorder\Editor\SampleModes\EndModes\EndMode.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Modules\Recorder\Editor\SampleModes\EndModes\MaxLogEndMode.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Modules\Recorder\Editor\SampleModes\EndModes\NeverEndMode.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Modules\Recorder\Editor\SampleModes\EndModes\TextEndMode.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Modules\Recorder\Editor\SampleModes\EndModes\TimeEndMode.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Modules\Recorder\Editor\SampleModes\StartModes\StartMode.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Modules\Recorder\Editor\SampleModes\StartModes\TextStartMode.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Modules\Recorder\Editor\SampleModes\StartModes\TimeStartMode.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Modules\Recorder\Editor\SampleStream.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Modules\Remote\Editor\BlankRow.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Modules\Remote\Editor\ClientCLIExecuter.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Modules\Remote\Editor\NGSettings.Remote.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Modules\Remote\Editor\RemoteCommandParser.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Modules\Remote\Editor\RemoteModule.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Modules\Remote\Editor\RemoteRow.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Modules\Remote\Editor\TcpClients\AbstractTcpClient.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGConsole\Modules\Remote\Editor\TcpClients\DefaultTcpClient.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGDraggableObject\Editor\NGDraggableObjectDrawer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGDraggableObject\Editor\NGSettings.Drag.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGFav\Editor\AssetsSelection.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGFav\Editor\Favorites.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGFav\Editor\NGFavWindow.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGFav\Editor\NGSettings.Fav.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGFav\Editor\SelectionItem.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGHierarchyEnhancer\Editor\DynamicObjectMenus\DynamicObjectMenu.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGHierarchyEnhancer\Editor\DynamicObjectMenus\GameObjectMenu.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGHierarchyEnhancer\Editor\NGHierarchyEnhancer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGHierarchyEnhancer\Editor\NGSettings.HierarchyEnhancer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGHub\Editor\HubComponentWindow.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGHub\Editor\HubComponents\AssetShortcutComponent.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGHub\Editor\HubComponents\HubComponent.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGHub\Editor\HubComponents\LoadSceneComponent.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGHub\Editor\HubComponents\MenuCallerComponent.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGHub\Editor\HubComponents\NavSelectionComponent.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGHub\Editor\HubComponents\ScenesComponent.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGHub\Editor\HubComponents\TimeScaleComponent.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGHub\Editor\NGHubEditorWindow.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGHub\Editor\NGHubExtensionWindow.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGHub\Editor\NGHubWindow.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGHub\Editor\NGSettings.Hub.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGInspectorGadget\Editor\CloneComponent.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGInspectorGadget\Editor\NGMissingScriptRecoveryWindow.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGInspectorGadget\Editor\NGReorderComponentsWindow.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGNavSelection\Editor\NGNavSelectionWindow.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGNavSelection\Editor\NGSettings.Nav.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGPrefs\Editor\NGPrefsWindow.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGPrefs\Editor\PList.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGPrefs\Editor\PreferencesManagers\EditorPrefsManager.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGPrefs\Editor\PreferencesManagers\PlayerPrefsManager.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGPrefs\Editor\PreferencesManagers\PrefsManager.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\CameraDataModules\Editor\CameraDataModuleEditor.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\CameraDataModules\Editor\ReplayDataModule.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\CameraDataModules\Keyboard\Editor\KeyboardModuleEditor.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\CameraDataModules\Keyboard\Editor\KeyboardReplayModule.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\CameraDataModules\Mouse\Editor\MouseModuleEditor.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\CameraDataModules\Mouse\Editor\MouseReplayModule.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\CameraDataModules\Screenshot\Editor\ScreenshotModuleEditor.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\CameraDataModules\Screenshot\Editor\ScreenshotReplayModule.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\CameraDataModules\Touch\Editor\TouchModuleEditor.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\CameraDataModules\Touch\Editor\TouchReplayModule.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\ArgumentDrawers\ArgumentDrawer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\ArgumentDrawers\BooleanArgumentDrawer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\ArgumentDrawers\ByteArgumentDrawer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\ArgumentDrawers\CharArgumentDrawer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\ArgumentDrawers\ColorArgumentDrawer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\ArgumentDrawers\DoubleArgumentDrawer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\ArgumentDrawers\EnumArgumentDrawer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\ArgumentDrawers\Int16ArgumentDrawer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\ArgumentDrawers\Int32ArgumentDrawer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\ArgumentDrawers\Int64ArgumentDrawer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\ArgumentDrawers\QuaternionArgumentDrawer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\ArgumentDrawers\RectArgumentDrawer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\ArgumentDrawers\SByteArgumentDrawer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\ArgumentDrawers\SingleArgumentDrawer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\ArgumentDrawers\StringArgumentDrawer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\ArgumentDrawers\UInt16ArgumentDrawer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\ArgumentDrawers\UInt32ArgumentDrawer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\ArgumentDrawers\UInt64ArgumentDrawer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\ArgumentDrawers\Vector2ArgumentDrawer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\ArgumentDrawers\Vector3ArgumentDrawer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\ArgumentDrawers\Vector4ArgumentDrawer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\Attributes\ArgumentDrawerForAttribute.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\Attributes\TypeDrawerForAttribute.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\Attributes\TypeHandlerDrawerForAttribute.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\ClientSceneExecuter.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\DataDrawer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\Exceptions\MissingComponentException.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\FeedbackAnimators\BgColorContentAnimator.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\FeedbackAnimators\ColorContentAnimator.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\IReplaySettings.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\ListingAssetsDrawer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\ListingShadersDrawer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\MethodArgumentsWindow.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\NGRemoteCameraWindow.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\NGRemoteHierarchyWindow.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\NGRemoteInspectorWindow.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\NGRemoteProjectWindow.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\NGRemoteWindow.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\NGReplayWindow.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\NGShaderUtility.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\ObjectWrappers\ClientComponent.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\ObjectWrappers\ClientField.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\ObjectWrappers\ClientGameObject.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\ObjectWrappers\ClientMethod.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\Replay.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\ResourcesPickerWindow.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\TypeHandlerDrawers\ArrayDrawer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\TypeHandlerDrawers\BooleanDrawer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\TypeHandlerDrawers\ByteDrawer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\TypeHandlerDrawers\CharDrawer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\TypeHandlerDrawers\ClassDrawer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\TypeHandlerDrawers\ColorDrawer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\TypeHandlerDrawers\DoubleDrawer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\TypeHandlerDrawers\EnumDrawer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\TypeHandlerDrawers\Int16Drawer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\TypeHandlerDrawers\Int32Drawer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\TypeHandlerDrawers\Int64Drawer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\TypeHandlerDrawers\QuaternionDrawer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\TypeHandlerDrawers\RectDrawer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\TypeHandlerDrawers\SByteDrawer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\TypeHandlerDrawers\SingleDrawer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\TypeHandlerDrawers\StringDrawer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\TypeHandlerDrawers\TypeHandlerDrawer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\TypeHandlerDrawers\UInt16Drawer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\TypeHandlerDrawers\UInt32Drawer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\TypeHandlerDrawers\UInt64Drawer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\TypeHandlerDrawers\UnityObjectDrawer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\TypeHandlerDrawers\UnsupportedTypeDrawer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\TypeHandlerDrawers\Vector2Drawer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\TypeHandlerDrawers\Vector3Drawer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\TypeHandlerDrawers\Vector4Drawer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\TypeHandlerDrawersManager.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRemoteScene\Editor\ValueMemorizer.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRenamer\Editor\NGRenamerWindow.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRenamer\Editor\TextFilters\AddFilter.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRenamer\Editor\TextFilters\ExtensionFilter.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRenamer\Editor\TextFilters\NumberFilter.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRenamer\Editor\TextFilters\RemoveFilter.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRenamer\Editor\TextFilters\ReplaceFilter.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGRenamer\Editor\TextFilters\TextFilter.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGScenes\Editor\NGScenesWindow.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGShaderFinder\Editor\NGShaderFinderWindow.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGSyncFolders\Editor\Action.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGSyncFolders\Editor\File.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGSyncFolders\Editor\InitialStates.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGSyncFolders\Editor\MasterStates.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGSyncFolders\Editor\NGSettings.SyncFolders.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGSyncFolders\Editor\NGSyncFoldersWindow.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGSyncFolders\Editor\Project.cs" />
+    <Compile Include="Assets\Plugins\NGTools\NGSyncFolders\Editor\SlaveStates.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\EasyMobile\Demo\Fonts\SIL Open Font License.txt" />
+    <None Include="Assets\EasyMobile\EasyMobileSettings.txt" />
+    <None Include="Assets\EasyMobile\Editor\Templates\Template_AppleTangle.txt" />
+    <None Include="Assets\EasyMobile\Editor\Templates\Template_Constants.txt" />
+    <None Include="Assets\EasyMobile\Editor\Templates\Template_GooglePlayTangle.txt" />
+    <None Include="Assets\EasyMobile\GUISkins\Fonts\License\LICENSE-2.0.txt" />
+    <None Include="Assets\EasyMobile\GUISkins\Fonts\License\OFL.txt" />
+    <None Include="Assets\EasyMobile\GUISkins\Fonts\License\ubuntu-font-licence-1.0.txt" />
+    <None Include="Assets\EasyMobile\link.xml" />
+    <None Include="Assets\PlayServicesResolver\Editor\play-services-resolver.txt" />
+    <None Include="Assets\Plugins\Android\GoogleMobileAdsPlugin\AndroidManifest.xml" />
+    <None Include="Assets\Plugins\NGTools\Locales\english\Common.txt" />
+    <None Include="Assets\Plugins\NGTools\Locales\english\Common\ContactFormWizard.txt" />
+    <None Include="Assets\Plugins\NGTools\Locales\english\Common\ExportImportSettings.txt" />
+    <None Include="Assets\Plugins\NGTools\Locales\english\Common\Preferences.txt" />
+    <None Include="Assets\Plugins\NGTools\Locales\english\Common\ScriptableObjectCreator.txt" />
+    <None Include="Assets\Plugins\NGTools\Locales\english\Common\Tips.txt" />
+    <None Include="Assets\Plugins\NGTools\Locales\english\NGConsole\Console.txt" />
+    <None Include="Assets\Plugins\NGTools\Locales\english\NGConsole\ExportRowsScriptableWizard.txt" />
+    <None Include="Assets\Plugins\NGTools\Locales\english\NGConsole\LogExporters\RawExporter.txt" />
+    <None Include="Assets\Plugins\NGTools\Locales\english\NGConsole\LogFilters\ContentFilter.txt" />
+    <None Include="Assets\Plugins\NGTools\Locales\english\NGConsole\LogFilters\HierarchyFilter.txt" />
+    <None Include="Assets\Plugins\NGTools\Locales\english\NGConsole\LogFilters\MaskTypeFilter.txt" />
+    <None Include="Assets\Plugins\NGTools\Locales\english\NGConsole\LogFilters\NameHierarchyFilter.txt" />
+    <None Include="Assets\Plugins\NGTools\Locales\english\NGConsole\LogFilters\TagFilter.txt" />
+    <None Include="Assets\Plugins\NGTools\Locales\english\NGConsole\LogFilters\ToggleTagsFilter.txt" />
+    <None Include="Assets\Plugins\NGTools\Locales\english\NGConsole\Modules\ArchiveModule.txt" />
+    <None Include="Assets\Plugins\NGTools\Locales\english\NGConsole\Modules\ColorMarkersModule.txt" />
+    <None Include="Assets\Plugins\NGTools\Locales\english\NGConsole\Modules\ColorMarkersWizard.txt" />
+    <None Include="Assets\Plugins\NGTools\Locales\english\NGConsole\Modules\MainModule.txt" />
+    <None Include="Assets\Plugins\NGTools\Locales\english\NGConsole\Modules\RecorderModule.txt" />
+    <None Include="Assets\Plugins\NGTools\Locales\english\NGConsole\Modules\RemoteModule.txt" />
+    <None Include="Assets\Plugins\NGTools\Locales\english\NGConsole\Modules\RowsDrawer.txt" />
+    <None Include="Assets\Plugins\NGTools\Locales\english\NGConsole\Modules\SampleModes.txt" />
+    <None Include="Assets\Plugins\NGTools\Locales\english\NGConsole\Modules\SampleStream.txt" />
+    <None Include="Assets\Plugins\NGTools\Locales\english\NGConsole\Modules\StreamLog.txt" />
+    <None Include="Assets\Plugins\NGTools\Locales\english\NGConsole\Rows\MultiContextsRow.txt" />
+    <None Include="Assets\Plugins\NGTools\Locales\english\NGDraggableObject\NGDraggableObject.txt" />
+    <None Include="Assets\Plugins\NGTools\Locales\english\NGFav\NGFav.txt" />
+    <None Include="Assets\Plugins\NGTools\Locales\english\NGHierarchyEnhancer\NGHierarchyEnhancer.txt" />
+    <None Include="Assets\Plugins\NGTools\Locales\english\NGInspectorGadget\CloneComponent.txt" />
+    <None Include="Assets\Plugins\NGTools\Locales\english\NGNavSelection\NGNavSelection.txt" />
+    <None Include="Assets\Plugins\NGTools\Locales\english\NGPrefs\NGPrefs.txt" />
+    <None Include="Assets\Plugins\NGTools\Locales\english\NGRemoteScene\NGRemote.txt" />
+    <None Include="Assets\Plugins\NGTools\Locales\english\NGSettings\ConsoleSettings.txt" />
+    <None Include="Assets\Plugins\NGTools\Locales\english\NGSettings\Inputs.txt" />
+    <None Include="Assets\Plugins\NGTools\Locales\english\NGSettings\InputsWizard.txt" />
+    <None Include="Assets\Plugins\NGTools\Locales\english\NGSyncFolders\NGSyncFolders.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="GenerateTargetFrameworkMonikerAttribute" />
+</Project>
